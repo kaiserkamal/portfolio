@@ -1,0 +1,23 @@
+h1{
+  color: antiquewhite;
+  align-items: center;
+  font-style: oblique;
+  font-variant-ligatures: normal;
+}
+p{
+  font-family: sans-serif;
+  color: antiquewhite;
+}
+
+body{
+  background-color: gray;
+
+}
+#box{
+  width:650px;
+  height: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: antiquewhite
+
+}

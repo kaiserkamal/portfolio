@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fortune cookies</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="out.js" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+      <center>
+
+
+        <div id="cokke">
+            <img src="headc.gif" alt="">
+  <p>A fortune cookie is a crisp and sugary cookie usually made from flour, sugar, vanilla, and sesame seed oil with a piece of paper inside, a "fortune", on which is an aphorism, or a vague prophecy. The message inside may also include a Chinese phrase with translation and/or a list of lucky numbers used by some as lottery numbers; since relatively few distinct messages are printed, in the recorded case where winning numbers happened to be printed, the lottery had an unexpectedly high number of winners sharing a prize.[1] Fortune cookies are often served as a dessert in Chinese restaurants in the United States and other Western countries, but are not a tradition in China. The exact origin of fortune cookies is unclear, though various immigrant groups in California claim to have popularized them in the early 20th century. They most likely originated from cookies made by Japanese immigrants to the United States in the late 19th or early 20th century. The Japanese version did not have the Chinese lucky numbers and was eaten with tea. </p>
+  <a href="https://en.wikipedia.org/wiki/Fortune_cookie">For more info</a>
+  <div id="b" style="position:absolute; center:50px"><img src="coki.png" width="200" height="150" alt=""/></div>
+
+    <div id="box">
+
+            <input id="button" type="button" value="Crack the ookie " onclick="response()">
+            <p id="response"></p>
+
+        </div>
+
+        <script>
+        function response() {
+            var list = [
+                "The wise man is the one that makes you think that he is dumb!",
+                "The usefulness of a cup is in its emptiness!",
+                "Whenever possible, keep it simple!",
+                "You should let go of negative things today!",
+                "Winning starts with beginning.",
+                "A smooth sea never made a skillful mariner!",
+                  "If you think you can, you can.!!!",
+                  "He who throws mud loses ground.",
+                    "Success lies in the hands of those who want it.",
+                    "Don’t worry about money. The best things in life are free.",
+                  "Don’t pursue happiness – create it.",
+                  "To avoid criticism, do nothing, say nothing, be nothing.",
+                  "One that would have the fruit must climb the tree.",
+                  "To think is easy; to act is difficult. To act as one thinks is the most difficult of all.",
+                  "Be positive, stay happy, don’t let the negativity or drama of the world get you down. Smile!",
+
+            ];
+            var number = Math.floor(Math.random()*15);
+            document.getElementById("response").innerHTML = list[number];
+        }
+        </script>
+
+        <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            function beeLeft() {
+                $("#b").animate({left: "-=300"}, 1500, "swing", beeRight);
+            }
+            function beeRight() {
+                $("#b").animate({left: "+=300"}, 1500, "swing", beeLeft);
+            }
+
+            beeRight();
+        });
+        </script>
+      </div>
+          </div>
+</center>
+    </body>
+</html>

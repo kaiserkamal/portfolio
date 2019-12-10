@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>kaiserkamal</title>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+
+
+  </head>
+  <body>
+<center>
+<div id="container">
+  <div id ="masthead">
+   <div id="log">
+
+   <div id="store" >
+
+   </div><!---this is closing div for store --->
+  </div><!---this is closing div for masthead --->
+
+<div id="links"><!---this is navigation--->
+  <ul>
+      <<li><a target="newtab"href="index.html">Home</a></li>
+      <li><a terget ="newtab"href="about.html">About</a></li>
+      <li><a target="newtab"href="project.html">Project</a></li>
+     
+      <li><a terget="newtab"href="contact.html">Contact</a></li>
+    </ul>
+     </div>
+
+
+<div id="main_body">
+  <script>
+  var today = new Date();
+  var hourNow = today.getHours();
+  var greeting;
+  if(hourNow > 18){greeting = 'Good Evening';
+}else if (hourNow > 12){greeting = 'Good Afternoon';
+  }else if (hourNow > 0){greeting = 'Good Morning';
+  }else{
+    greeting = 'Good Morning';
+  }
+  function hello(n){
+    alert("Hello! " + n);
+  }
+  var n=prompt("Please enter your name:","");
+  document.write('<h2>' + greeting + "    " + n + "  "+ "Welcome to my site" + '</h2>');
+  </script>
+
+<p>Thank you for visiting</p>
+  <div class="moving"> <h3>"THE DESIGNER || THE CODER"</h3>
+
+  </div>
+<h1>Kaiser Kamal</h1>
+  </div><!--this is the closing div for main_body-->
+
+
+
+
+  </div><!-- This is the closing div for the id name container !-->
+</center>
+  </body>
+</html>

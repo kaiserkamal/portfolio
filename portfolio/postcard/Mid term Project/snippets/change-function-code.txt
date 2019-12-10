@@ -1,0 +1,8 @@
+document.getElementById('info-name').textContent = stateData[selected].name;
+document.getElementById('info-fullName').textContent = stateData[selected].fullName;
+document.getElementById('info-born').textContent = stateData[selected].born;
+document.getElementById('info-nationality').textContent = stateData[selected].nationality;
+document.getElementById('info-knownFor').textContent = stateData[selected].knownFor;
+document.getElementById('info-movement').textContent = stateData[selected].movement;
+document.getElementById('info-notableWork').textContent = stateData[selected].notableWork;
+document.getElementById('info-died').textContent = stateData[selected].died;
